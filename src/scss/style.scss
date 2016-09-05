@@ -21,6 +21,10 @@ header {
   background-color:rgba(255,255,255,0.9);
   text-align:center;
   z-index:100;
+
+  nav {
+    text-align:right;
+  }
 }
   .header-cont {
     padding:2em 3em 1em 3em;
@@ -73,3 +77,6 @@ header {
     .header-title span {
       font-weight:300;
     }
+.tasks-cont {
+    padding-top:5em;
+}
