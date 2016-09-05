@@ -1,0 +1,22 @@
+{% block top %}
+{% endblock %}
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Raleway:300|Work+Sans:400,500" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <link href="/css/style.min.css" rel="stylesheet">
+        <script src="/js/script.min.js"></script>
+        {% block head %}
+        {% endblock %}
+    </head>
+    <body>
+        {% include "../includes/header.html" %}
+        {% block body %}
+        {% endblock %}
+        {% include "../includes/footer.html" %}
+    </body>
+</html>
