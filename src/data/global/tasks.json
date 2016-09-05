@@ -1,14 +1,20 @@
 {
   "sections": [
     {
-      "title": "Week 1",
+      "title": "Week 2",
       "tasks": [
         {
-          "name": "This is the task name.",
-          "inactive": true
+          "name": "Homework 2"
         },
         {
-          "name": "Another task name."
+          "name": "Grading options survey (released Friday)"
+        },
+        {
+          "name": "Do Discussion 2a to prepare for homework.",
+          "tags": ["optional"]
+        },
+        {
+          "name": "Checkout new resources: Sinho's Notes, Alvin's Quizzes, Yujie's Review Lectures"
         }
       ]
     }

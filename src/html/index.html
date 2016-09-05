@@ -16,11 +16,14 @@ redirect_from: /
             {% for task in section.tasks %}
             <div class="task {% if task.inactive == true %}inactive{% endif %}">
                 <div class="inactive-bar"></div>
-                <span>
+                <span class="action">
                     <input type="checkbox" />
                 </span>
-                <span>
+                <span class="text">
                     <p class="name">{{ task.name }}</p>
+                    {% if task.tags %}
+                    <p class="byline">{% for tag in task.tags %}#{{ tag }} {% endfor %}</p>
+                    {% endif %}
                 </span>
             </div>
             {% endfor %}
