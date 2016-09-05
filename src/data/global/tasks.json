@@ -1,3 +1,12 @@
-[
-
-]
+{
+  "sections": [
+    {
+      "title": "Week 1",
+      "tasks": [
+        {
+          "name": "This is the task name."
+        }
+      ]
+    }
+  ]
+}

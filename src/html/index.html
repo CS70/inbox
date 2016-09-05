@@ -8,7 +8,22 @@ redirect_from: /
 
 {% block body %}
 <main class="tasks-cont">
-    <h1>Inbox</h1>
-    <p>Here are your recommended tasks for {{ current.date_range }}</p>
+    <div class="wrap">
+        <h1>Inbox</h1>
+        <p>Here are your recommended tasks, with the newest tasks from {{ current.date_range }}</p>
+        {% for section in tasks.sections %}
+            <p class="divider">{{ section.title }}</p>
+            {% for task in section.tasks %}
+            <div class="task">
+                <span>
+                    <input type="checkbox" />
+                </span>
+                <span>
+                    <p class="name">{{ task.name }}</p>
+                </span>
+            </div>
+            {% endfor %}
+        {% endfor %}
+    </div>
 </main>
 {% endblock %}
