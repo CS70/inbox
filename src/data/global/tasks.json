@@ -11,10 +11,30 @@
         },
         {
           "name": "Do Discussion 2a to prepare for homework.",
-          "tags": ["optional"]
+          "tags": [
+            "optional"
+          ]
         },
         {
-          "name": "Checkout new resources: Sinho's Notes, Alvin's Quizzes, Yujie's Review Lectures"
+          "name": "Checkout new resources: Sinho's Notes, Alvin's Quizzes, Yujie's Review Lectures",
+          "tags": [
+            "optional"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Week 1",
+      "inactive": true,
+      "tasks": [
+        {
+          "name": "Homework 1"
+        },
+        {
+          "name": "Add yourself to Gradescope"
+        },
+        {
+          "name": "Add yourself to Piazza"
         }
       ]
     }

@@ -98,11 +98,12 @@ header {
     .divider {
         width:100%;
         border-bottom:1px solid #eee;
-        padding:0.5em 1em;
+        padding:1.5em 1em 0.5em 1em;
         color:#c9c9c9;
         text-transform:uppercase;
         font-size:0.9em;
         letter-spacing:0.1em;
+        float:left;
     }
 
     .task {
@@ -116,6 +117,7 @@ header {
 
         input {
             padding:0.5em;
+            z-index:15;
         }
 
         span {

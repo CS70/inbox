@@ -6,6 +6,8 @@ redirect_from: /
 {% endblock %}
 {% block title %}CS70 Inbox{% endblock %}
 
+{% set task_id = 0 %}
+
 {% block body %}
 <main class="tasks-cont">
     <div class="wrap">
@@ -14,10 +16,11 @@ redirect_from: /
         {% for section in tasks.sections %}
             <p class="divider">{{ section.title }}</p>
             {% for task in section.tasks %}
-            <div class="task {% if task.inactive == true %}inactive{% endif %}">
+            {% set task_id = task_id + 1 %}
+            <div class="task{% if task.inactive or section.inactive %} inactive{% endif %}" id="{{ task_id }}">
                 <div class="inactive-bar"></div>
                 <span class="action">
-                    <input type="checkbox" />
+                    <input type="checkbox" no="{{ task_id }}" {% if task.inactive or section.inactive %}checked{% endif %}/>
                 </span>
                 <span class="text">
                     <p class="name">{{ task.name }}</p>
