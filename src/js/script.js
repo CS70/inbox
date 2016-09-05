@@ -1,16 +1,19 @@
 $(document).ready(function() {
 
+    TASK_DATA_PARAM = 'cs70inboxtasks';
+
     /**
      * Manages state of all tasks
      */
     function State() {
 
-        var data = {};
+        data = {};
 
         /**
          * Save in local browser cache.
          */
         this.save = function() {
+            localStorage.setItem(TASK_DATA_PARAM, JSON.stringify(data));
             return this;
         }
 
@@ -18,6 +21,11 @@ $(document).ready(function() {
          * Load from local browser cache
          */
         this.load = function() {
+            raw = localStorage.getItem(TASK_DATA_PARAM);
+            if (raw) {
+                data = JSON.parse(raw);
+                console.log('Loaded state: ' + raw);
+            }
             return this;
         }
 
@@ -29,7 +37,7 @@ $(document).ready(function() {
          */
         this.get = function(i) {
             if (i in data) {
-                return data.get(i);
+                return data[i];
             }
             return false;
         }
@@ -42,11 +50,10 @@ $(document).ready(function() {
          */
         this.set = function(i, value) {
             data[i] = value;
+            this.save();
             return this;
         }
     }
-
-    state = new State().load();
 
     /**
      * Updates the GUI.
@@ -55,6 +62,11 @@ $(document).ready(function() {
         $('.task').each(function() {
             var id = parseInt($(this).attr('id'));
             $(this).find('input').prop('checked', state.get(id));
+            if (state.get(id)) {
+                $(this).addClass('inactive');
+            } else {
+                $(this).removeClass('inactive');
+            }
         });
     }
 
@@ -73,4 +85,7 @@ $(document).ready(function() {
         state.set(id, $(this).prop('checked'));
         get_task(id).toggleClass('inactive');
     });
+
+    state = new State().load();
+    updateGUI();
 })
