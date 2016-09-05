@@ -86,6 +86,13 @@ $(document).ready(function() {
         get_task(id).toggleClass('inactive');
     });
 
+    /**
+     * Transform all of task into hitarea.
+     */
+    $('.task').on('click', function() {
+        $(this).find('input').click();
+    });
+
     state = new State().load();
     updateGUI();
 })
