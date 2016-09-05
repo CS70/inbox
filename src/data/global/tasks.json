@@ -4,7 +4,11 @@
       "title": "Week 1",
       "tasks": [
         {
-          "name": "This is the task name."
+          "name": "This is the task name.",
+          "inactive": true
+        },
+        {
+          "name": "Another task name."
         }
       ]
     }

@@ -14,7 +14,8 @@ redirect_from: /
         {% for section in tasks.sections %}
             <p class="divider">{{ section.title }}</p>
             {% for task in section.tasks %}
-            <div class="task">
+            <div class="task {% if task.inactive == true %}inactive{% endif %}">
+                <div class="inactive-bar"></div>
                 <span>
                     <input type="checkbox" />
                 </span>

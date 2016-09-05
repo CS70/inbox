@@ -1,1 +1,1 @@
-{"current":{"date_range":"Tuesday, September 4 to Friday, September 9"},"tasks":{"sections":[{"title":"Week 1","tasks":[{"name":"This is the task name."}]}]}}
+{"current":{"date_range":"Tuesday, September 4 to Friday, September 9"},"tasks":{"sections":[{"title":"Week 1","tasks":[{"name":"This is the task name.","inactive":true},{"name":"Another task name."}]}]}}
