@@ -3,7 +3,7 @@ A CS70-specific list of todo-list and task manager. This repository
 contains (1) the generator for the website and (2) the static 
 deployment.
 
-created by (http://alvinwan.com)[Alvin Wan], Fall 2016
+created by [Alvin Wan](http://alvinwan.com), Fall 2016
 
 # Usage
 
