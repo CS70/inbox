@@ -87,7 +87,7 @@ $(document).ready(function() {
     });
 
     /**
-     * Transform all of task into hitarea.
+     * Transform all text into hitarea
      */
     $('.task .text').on('click', function() {
         $(this).parent().find('input').click();
