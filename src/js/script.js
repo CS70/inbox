@@ -89,8 +89,8 @@ $(document).ready(function() {
     /**
      * Transform all of task into hitarea.
      */
-    $('.task').on('click', function() {
-        $(this).find('input').click();
+    $('.task .text').on('click', function() {
+        $(this).parent().find('input').click();
     });
 
     state = new State().load();
