@@ -24,9 +24,12 @@ redirect_from: /
                 </span>
                 <span class="text">
                     <p class="name">{{ task.name }}</p>
+                    <p class="byline">
+                        {% if task.byline %}{{ task.byline }}{% endif %}
                     {% if task.tags %}
-                    <p class="byline">{% for tag in task.tags %}#{{ tag }} {% endfor %}</p>
+                    {% for tag in task.tags %}#{{ tag }} {% endfor %}
                     {% endif %}
+                    </p>
                 </span>
             </div>
             {% endfor %}
