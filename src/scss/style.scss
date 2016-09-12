@@ -117,6 +117,10 @@ header {
         padding:0.75em 1em;
         text-align:left;
 
+        a {
+            border-bottom:1px dotted blue;
+        }
+
         input {
             z-index:15;
             display:block;

@@ -8,7 +8,7 @@
           "byline": "due Friday, September 16 at 10 p.m."
         },
         {
-          "name": "Fill out grading options form",
+          "name": "Fill out <a href='https://goo.gl/forms/6JzJeajzeaQhOhLU2'>grading options form</a>",
           "byline": "due Friday, September 16 at 11:59 p.m.",
           "tags": [
             "required"
@@ -29,7 +29,7 @@
           ]
         },
         {
-          "name": "Midterm 1 Exam",
+          "name": "<a href='http://eecs70.org/midterm1'>Midterm 1</a>",
           "byline": "Monday, September 19, 8-10 p.m."
         }
       ]
